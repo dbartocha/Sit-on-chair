@@ -567,3 +567,85 @@ input[name='check']{
     width: 335px;
     height: 75px;
 }
+.formula input{
+    color: black;
+}
+/* FOOTER -------------------------------------------------------------------*/
+.end_center{
+    width: 1050px;
+    margin: 0 auto;
+    height: 150px;
+
+
+}
+.end{
+display: flex;
+justify-content: space-between;
+
+}
+.end p {
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+
+.end_right {
+    padding-top: 70px;
+
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.end_right h7 {
+    padding-left: 30px;
+    padding-top: 12px;
+    font-size: 20px;
+}
+.ico1{
+    background-image: url("../images/flickr.png");
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+
+}
+.ico2 {
+    background-image: url("../images/vimeo.png");
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+
+}
+.ico3{
+    background-image: url("../images/pinterest.png");
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+
+}
+
+.ico4 {
+    background-image: url("../images/twitter.png");
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+
+}
+
+.end_right div {
+    margin-right:15px;
+}
