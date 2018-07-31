@@ -5,26 +5,40 @@
     <title>CodersLab</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src='js/app.js'></script>
 </head>
 <body>
 <header>
     <div class="main_width clearfix">
         <h1>SIT <span class="colors">  ON</span> CHAIR</h1>
-        <nav>
-            <ul>
-                <li><a href="#">O FIRMIE</a></li><!--
-              -->
-                <li><a href="#">GALERIA</a></li><!--
-              -->
-                <li><a href="#">KONTAKT</a></li>
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li><a href="#" class='navigation-element' >O FIRMIE</a>
+                    <ul class="navigation-sublist">
+                        <li><a href="#" class="navigation-sublist-el">
+                            Aktualności</a></li>
+                        <li><a href="#" class="navigation-sublist-el"
+                        >Nasz Team</a></li>
+                        <li><a href="#" class="navigation-sublist-el">
+                            Historia</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class='navigation-element'>GALERIA</a></li>
+
+                <li><a href="#" class='navigation-element'>KONTAKT</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <section class="content">
+    <div class="slider">
+        <button type="button" class="prev"><</button>
+        <button type="button"  class="next"> >
+        </button>
     <div class="banner center clearfix">
         <div class="column-left">
-            <div class="image"></div>
+            <img src="images/black_chair.png" class="image" alt="">
         </div>
         <div class="column-right">
             <div class="content">
@@ -37,6 +51,7 @@
                 <input type="submit" value="ZOBACZ WIĘCEJ">
             </div>
         </div>
+    </div>
     </div>
 </section>
 <section class="clearfix">

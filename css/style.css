@@ -27,6 +27,35 @@ body {
     margin: 0 auto;
 }
 
+
+
+.navigation-sublist{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style:none;
+    margin:0;
+    position: absolute;
+    top:60px;
+    left:64%;
+    background: #000;
+    padding:15px 15px;
+
+}
+
+.navigation-sublist::after{
+    top: -12%;
+    left: 40%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    content: '';
+    background-color: black;
+    transform: rotate(45deg);
+
+}
+
+
 header {
     padding: 14px 0;
     background: black;
@@ -73,18 +102,50 @@ header li {
 
 }
 
+.prev {
+    position: absolute;
+    top:40%;
+    left: 15%;
+    display: inline-block;
+    color: rgb(36, 186, 159);
+    font-size: 70px;
+    background: none;
+    width: 60px;
+    cursor: pointer;
+    border: 0;
+
+
+}
+.next{
+    position: absolute;
+    top:40%;
+    left: 80%;
+    display: inline-block;
+    color: rgb(36, 186, 159);
+    font-size: 70px;
+    background: none;
+    width: 60px;
+    cursor: pointer;
+    border: 0;
+}
+
 .content .column-left {
     justify-content: center;
-    width: 40%;
+    width: 50%;
 
 }
 
 .content .column-right {
-    width: 60%;
+    width: 50%;
     float: right;
 
 }
-
+.column-right{
+    margin-right: 65px;
+}
+.column-right span {
+    color: rgb(36, 186, 159);
+}
 .column-right p {
     line-height: 20px;
     display: flex;
@@ -94,14 +155,15 @@ header li {
     font-size: 15px;
 }
 
-.content .image {
-    width: 115%;
-    height: 500px;
-    margin-top: 40px;
-    margin-left: -63px;
-    background-image: url("../images/black_chair.png");
-    background-size: 581px;
-    background-repeat: no-repeat;
+.column-left .image {
+    width:121%;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: -60px;
+
+}
+img{
+    max-width: 121%;
 }
 
 .column-right {
@@ -160,7 +222,8 @@ div input {
     position: relative;
     width: 30%;
     height: 230px;
-
+    cursor: pointer;
+    transition: 2s;
 }
 
 .box2 {
@@ -168,7 +231,7 @@ div input {
     position: relative;
     width: 30%;
     height: 230px;
-
+cursor: pointer;
 }
 
 .box3 {
