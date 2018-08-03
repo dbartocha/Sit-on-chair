@@ -75,17 +75,30 @@ for(var i=0; i<elements.length;i++) {
         var right = document.querySelector('.column-right');
 
         var headtext = right.querySelector('h1');
+
+
         if (index != 0) {
             headtext.innerHTML = '' + index + ' SIT ' + '<span> ON </span>' + ' OUR ' + '<span> CHAIR </span>';
-            var left = document.querySelector('.column-left');
-            left.innerHTML = '<img src="images/black_chair.png" class="image" alt="">';
+
         }
         else {
             headtext.innerHTML = '' + ' SIT ' + '<span> ON </span>' + ' OUR ' + '<span> CHAIR </span>';
         }
+
+
         var left = document.querySelector('.column-left');
-        left.innerHTML = '<img src="images/black_chair.png" class="image" alt="">';
+
+        if(index%2==0){
+            left.innerHTML = '<img src="images/black_chair.png" class="image" alt="">';
+        }
+        else{
+            left.innerHTML = '<img src="images/orange_chair.png" class="image" alt="">';
+        }
+
+
     })
+
+
 
     prev.addEventListener('click', function () {
 
@@ -96,17 +109,21 @@ for(var i=0; i<elements.length;i++) {
 
         if (index != 0) {
             headtext.innerHTML = '' + index + ' SIT ' + '<span> ON </span>' + ' OUR ' + '<span> CHAIR </span>';
-            var left = document.querySelector('.column-left');
-            left.innerHTML = '<img src="images/black_chair.png" class="image" alt="">';
 
         }
         else {
             headtext.innerHTML = '' + ' SIT ' + '<span> ON </span>' + ' OUR ' + '<span> CHAIR </span>';
-            var left = document.querySelector('.column-left');
-            left.innerHTML = '<img src="images/black_chair.png" class="image" alt="">';
-
 
         }
+
+
+        var left = document.querySelector('.column-left');
+        if(index%2==0){
+            left.innerHTML = '<img src="images/black_chair.png" class="image" alt="">';
+        }
+        else{
+            left.innerHTML = '<img src="images/orange_chair.png" class="image" alt="">';
+            }
 
     });
 
